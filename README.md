@@ -37,18 +37,18 @@ Only F camera streams are normally expected to contain telemetry data.
 Frame Structure (92 bytes per packet)
 ----------------------------------------------------------------------
 
-Offset   Size   Type        Description
-------   ----   --------    -----------------------------------------
-0x00     4      uint32      Record type
-0x04     4      uint32      Subtype
-0x08     4      uint32      Seconds offset from clip start
-0x0C     4      uint32      Year
-0x10     4      uint32      Month
-0x14     4      uint32      Day
-0x18     4      char[4]     Magic tag (ASCII "ANW\\0")
-0x1C     8      double      Latitude
-0x24     8      double      Longitude
-0x2C     8      double      Speed (meters per second)
-0x34     24     char[]      Device / firmware identifier
-0x4C     12     bytes       Reserved / padding
+Offset | Size | Type    | Description
+-------|------|---------|-----------------------------------------
+0x00   | 4    | uint32  | Record type
+0x04   | 4    | uint32  | Subtype
+0x08   | 4    | uint32  | Seconds offset from clip start
+0x0C   | 4    | uint32  | Year
+0x10   | 4    | uint32  | Month
+0x14   | 4    | uint32  | Day
+0x18   | 4    | char[4] | Magic tag (ASCII "ANW\\0")
+0x1C   | 8    | double  | Latitude
+0x24   | 8    | double  | Longitude
+0x2C   | 8    | double  | Speed (meters per second)
+0x34   | 24   | char[]  | Device / firmware identifier
+0x4C   | 12   | bytes   | Reserved / padding
 
